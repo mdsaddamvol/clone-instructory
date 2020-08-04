@@ -14,10 +14,7 @@ const Hero = (props) => {
 									are serving you the platform that assists you to create and
 									sell your own online courses.
 								</p>
-								<a
-									href='https://instructory.net/auth'
-									className='width-btn-primary-lg slider-btn bg-red'
-								>
+								<a href='yh' className='width-btn-primary-lg slider-btn bg-red'>
 									Upload Your Knowledge
 								</a>
 							</div>
@@ -27,7 +24,7 @@ const Hero = (props) => {
 						<div className='slider-img'>
 							<img
 								src='https://instructory.net//assets/images/slider-new.png'
-								alt='slider image'
+								alt='slider'
 							/>
 						</div>
 					</div>

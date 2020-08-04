@@ -13,7 +13,7 @@ const Header = (props) => (
 
 		<div className='signin-out '>
 			<span className='signin'>Sign In</span>
-			<button className='signout'>Sign Up</button>
+			<span className='signout'>Sign Up</span>
 		</div>
 	</div>
 );

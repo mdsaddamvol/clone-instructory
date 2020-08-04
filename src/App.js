@@ -8,11 +8,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "./components/header.jsx";
-
+import "react-glide/lib/reactGlide.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "./components/hero/hero.jsx";
-import { Glide } from "react-glide";
+import CardGlide from "./components/sections/best-courses-section/glide/glide.jsx";
 import BestCourses from "./components/sections/best-courses-section/bestcourses-section.component.jsx";
 library.add(fab, faCartPlus, faHeart, faShare);
 function App() {
@@ -20,12 +20,9 @@ function App() {
 		<div className='App'>
 			<Header />
 			<Hero props />
-
-			<Glide height={500}>
-				<div className='card-container'>
-					<BestCourses />
-				</div>
-			</Glide>
+			<div className='card-container '>
+				<BestCourses />
+			</div>
 		</div>
 	);
 }

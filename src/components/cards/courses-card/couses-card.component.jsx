@@ -17,7 +17,11 @@ const CoursesCard = ({ albumId, id, title, url, thumbnailUrl }) => {
 				<span>{title.slice(0, 20)}</span>
 			</div>
 			<div className='card-discription'>
-				<span>body.slice</span>
+				<span>
+					Note that the development build is not optimized. To create a
+					production build, use yarn build.ote that the development build is not
+					optimized.
+				</span>
 			</div>
 			<div className='price-tag'>
 				<div className='price'>

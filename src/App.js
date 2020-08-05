@@ -12,17 +12,16 @@ import "react-glide/lib/reactGlide.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "./components/hero/hero.jsx";
-import CardGlide from "./components/sections/best-courses-section/glide/glide.jsx";
-import BestCourses from "./components/sections/best-courses-section/bestcourses-section.component.jsx";
+
+import AllCourses from "./components/sections/allcorses/allcouses.component.jsx";
 library.add(fab, faCartPlus, faHeart, faShare);
 function App() {
 	return (
 		<div className='App'>
 			<Header />
-			<Hero props />
-			<div className='card-container '>
-				<BestCourses />
-			</div>
+			<Hero />
+
+			<AllCourses />
 		</div>
 	);
 }

@@ -8,7 +8,7 @@ const Header = (props) => (
 		<FblikeButtons />
 		<div className='strtlrn '>
 			<span>Start Learning</span>
-			<button className=''>Become an Online Teacher</button>
+			<span className='span2'>Become an Online Teacher</span>
 		</div>
 
 		<div className='signin-out '>

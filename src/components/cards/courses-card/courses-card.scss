@@ -44,20 +44,23 @@
 		/*
 			grid-column: 1 /-1;
 			grid-row: 6/7;*/
-		font-family: Poppins-Regular;
-		font-size: 12px;
-		color: #444;
+		span {
+			font-family: Poppins-bold;
+			font-size: 16px;
+			color: #444;
+		}
 	}
 	.card-discription {
 		grid-area: discrp;
 		/*
 			grid-column: 1 /-1;
 			grid-row: 7/9;*/
+		span {
+			font-family: Poppins-light;
+			font-size: 11px;
 
-		font-family: Poppins-Regular;
-		font-size: 11px;
-		line-height: 1.6;
-		color: #444;
+			color: #444;
+		}
 	}
 	.price-tag {
 		grid-area: pric;

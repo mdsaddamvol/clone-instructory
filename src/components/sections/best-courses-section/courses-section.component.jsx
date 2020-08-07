@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CoursesCard from "../../cards/courses-card/couses-card.component";
 import "./courses-section.scss";
+import OwlCarousel from "react-owl-carousel2";
+import "react-owl-carousel2/lib/styles.css";
 const Courses = ({ id, catagory }) => {
 	const [photos, setPhotos] = useState([]);
 
@@ -15,18 +17,22 @@ const Courses = ({ id, catagory }) => {
 			fetchdta();
 		}
 	}, [photos, setPhotos]);
+	const options = {
+		items: 4,
+		autoplayHoverPause: true,
+		rewind: true,
+		autoplay: true,
+	};
 	return (
 		<div className='container'>
 			<div className='border-bottom '>
 				<h1 className=''>{catagory} corses</h1>
 			</div>
-			<div className='card-container'>
-				{photos
-					.filter((photo, idx) => idx < 4)
-					.map((photo) => {
-						return <CoursesCard {...photo} key={photo.id} />;
-					})}
-			</div>
+			<OwlCarousel useRef='car' options={options}>
+				{photos.map((photo) => {
+					return <CoursesCard {...photo} key={photo.id} />;
+				})}
+			</OwlCarousel>
 		</div>
 	);
 };

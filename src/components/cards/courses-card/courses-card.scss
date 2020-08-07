@@ -41,6 +41,7 @@
 	}
 	.card-title {
 		grid-area: title;
+
 		/*
 			grid-column: 1 /-1;
 			grid-row: 6/7;*/
@@ -83,4 +84,7 @@
 			align-items: center;
 		}
 	}
+}
+.owl-item.active:first-child {
+	display: none;
 }
